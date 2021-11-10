@@ -73,12 +73,13 @@ namespace EmailToExcel
 
 
 
-            //Prepare a class for writing email to the database
+            //Prepare a ExcelPackage class for writing email to the database
             try
             {
                 //Create ExcelPackage instance
                 ExcelPackage excel = new ExcelPackage();
 
+                //EXCEL SHEET CUSTOMIZATION
                 //Name the sheet
                 var workSheet = excel.Workbook.Worksheets.Add("Sheet1");
                 //Headers with colors
@@ -95,7 +96,7 @@ namespace EmailToExcel
                 workSheet.Cells[1, 4].Style.Fill.PatternType = ExcelFillStyle.Solid;
                 workSheet.Cells[1, 4].Style.Fill.BackgroundColor.SetColor(Color.Orange);
 
-
+                //Nice frontend stuff for console
                 Console.WriteLine("Reading mail...");
 
                 // Read 'n' mails
