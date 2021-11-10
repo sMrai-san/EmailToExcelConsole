@@ -41,6 +41,10 @@ namespace EmailToExcel
 
             ExchangeService _service;
 
+            //Office365 credentials
+            string ouserName = "yourOffice365account";
+            string opassword = "yourpassword";
+
             //How many mails we are reading from newest to last
             int mailsToRead = 100;
 
@@ -59,7 +63,7 @@ namespace EmailToExcel
 
                 _service = new ExchangeService
                 {
-                    Credentials = new WebCredentials("yourOffice365account", "yourpassword")
+                    Credentials = new WebCredentials(ouserName, opassword)
                 };
 
                 //Office365 webservice URL
