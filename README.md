@@ -10,7 +10,7 @@
 </div>
 
 
-Console program to read specific messages from office365. With default settings this console program will read 100 mails from office365 account and write only those mails where topic's first 10 charachters contains date. The excel file will contain the following info:
+Console program to read specific messages from office365. With default settings this console program will read 100 mails from office365 account and write only mails where topic's first 10 charachters contains date. The excel file will contain the following info:
 <ul>
 <li>Date Recieved</li>
 <li>Date TODO</li>
